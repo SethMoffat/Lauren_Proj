@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <body>
+    <h1>Budget A Trip!</h1>
+    <p>Congratulations, you have made it through high school and decide to take the next step on your jounrey to further your education! You must decide which direction you want to take moving forward in your life.</p>
+    <h3>Choose your major</h3>
+
+    <a href="Art\Art.html"><button>Arts</button></a>
+    <a href="Science\Science.html"><button>Science</button></a>
+    <a href="Health\Health.html"><button>Health</button></a>
+    <a href="Business\Business.html"><button>Business</button></a>
+    
+</body>
     </div>
   );
 }
