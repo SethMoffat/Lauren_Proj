@@ -1,19 +1,35 @@
 import './App.css';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Start from './screens/Start';
+import Art from './screens/Art';
+import Artist from './screens/Artist';
+import Bio from './screens/Bio';
+import Science from './screens/Science'
+import Health from './screens/Health'
+import Business from './screens/Business'
+import Musician from './screens/Musician'
+import Photographer from './screens/Photographer'
+
 
 function App() {
   return (
     <div className="App">
-      <body>
-    <h1>Budget A Trip!</h1>
-    <p>Congratulations, you have made it through high school and decide to take the next step on your jounrey to further your education! You must decide which direction you want to take moving forward in your life.</p>
-    <h3>Choose your major</h3>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Start/>}/>
+          <Route index element={<Start/>} />
+          <Route path="art" element={<Art/>} />
+          <Route path="science" element={<Science/>} />
+          <Route path="health" element={<Health/>} />
+          <Route path="business" element={<Business/>} />
+          <Route path="artist" element={<Artist/>} />
+          <Route path="Bio" element={<Bio/>} />
+          <Route path="Musician" element={<Musician/>} />
+          <Route path="Photographer" element={<Photographer/>} />
 
-    <a href="Art\Art.html"><button>Arts</button></a>
-    <a href="Science\Science.html"><button>Science</button></a>
-    <a href="Health\Health.html"><button>Health</button></a>
-    <a href="Business\Business.html"><button>Business</button></a>
-    
-</body>
+        </Routes>
+      </BrowserRouter>
+      
     </div>
   );
 }
